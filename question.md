@@ -159,5 +159,29 @@ next: Function: 一定要调用该方法来 resolve 这个钩子。
 6. 浏览器下载web服务器返回的数据及解析html源文件；
 7. 生成DOM树，解析css和js，渲染页面，直至显示完成；
 
->  **19**
+>  **19**.Vue组件data为什么是函数？
+
+Object是引用数据类型,如果不用function 返回,每个组件的data 都是内存的同一个地址,一个数据改变了其他也改变了;javascipt只有函数构成作用域(注意理解作用域,只有`函数的{}`构成作用域,`对象的{}`以及 `if(){}`都不构成作用域)，data是一个函数时，每个组件实例都有自己的作用域，每个实例相互独立,不会相互影响
+
+> hrml5新标签
+
+header,main,menu,footer,aside,section,canvas,video,audio,svg,code,time,mark
+
+> css3新特性
+
+背景和边宽：border-radius,box-shadow
+
+文本效果：text-shadow,word-wrap
+
+2/3D:transform,transition
+
+动画：animation
+
+> 阻止原生js冒泡
+
+event.stopPropagation()
+
+> jsonp
+
+> 本地代理
 
